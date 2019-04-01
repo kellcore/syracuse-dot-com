@@ -1,0 +1,29 @@
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    background-color: palevioletred;
+    font-size: 16px;
+}
+.container {
+    width: 100%;
+    background-color: black;
+    color: white;
+    @include breakpoint(sm) {
+        width: 96%;
+        margin: 0 auto;
+    }
+    @include breakpoint(md) {
+        width: 1000px;
+    }
+    @include breakpoint(lg) {
+        width: 1200px;
+    }
+}
+.responsive-img {
+        width: 100%;
+        height: auto;
+}

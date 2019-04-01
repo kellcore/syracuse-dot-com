@@ -1,0 +1,37 @@
+.showcase {
+    background-color: black;
+    color: white;
+    .primary {
+        position: relative;
+        margin-bottom: 1rem;
+        .article-text {
+            background-color: orchid;
+            @include breakpoint(sm) {
+                position: absolute;
+                bottom: 1rem;
+                left: 1rem;
+            }
+        }
+    }
+    .showcase-row {
+        @include breakpoint(sm) {
+            display: flex;
+            .secondary {
+                width: 50%;
+            }
+            .showcase-right {
+                width: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                .tertiary {
+                    width: calc(50% - 1rem);
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+.trending {
+    background-color: black;
+    color: white;
+}
